@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Classroom Seat Allocation System</title>
+<script src="js/api.js"></script>
+</head>
+<body>
+<script>
+  // Simple entry point: send logged-in students to the dashboard, everyone else to login.
+  window.location.href = session.get() ? 'dashboard.html' : 'login.html';
+</script>
+</body>
+</html>

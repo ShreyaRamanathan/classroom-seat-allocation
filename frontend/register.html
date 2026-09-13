@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Account · Classroom Seat Allocation System</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="page-center">
+  <div class="auth-card">
+    <div class="brand">
+      <div class="brand-icon">📝</div>
+      <h1>Create Your Account</h1>
+      <p>Register to start booking classroom seats</p>
+    </div>
+
+    <div id="banner" class="banner"></div>
+
+    <form id="registerForm" novalidate>
+      <div class="field" id="field-name">
+        <label>👤 Student Name</label>
+        <input type="text" id="studentName" placeholder="e.g. Ananya Sharma" autocomplete="name">
+        <div class="field-error">Please enter your name.</div>
+      </div>
+
+      <div class="field" id="field-id">
+        <label>🆔 Student ID / Register Number</label>
+        <input type="text" id="studentId" placeholder="e.g. CS2024099" autocomplete="username">
+        <div class="field-error">Please enter your Student ID.</div>
+      </div>
+
+      <div class="field" id="field-password">
+        <label>🔒 Password</label>
+        <input type="password" id="password" placeholder="Create a password" autocomplete="new-password">
+        <div class="field-error">Password must be at least 4 characters.</div>
+      </div>
+
+      <div class="field" id="field-confirm">
+        <label>🔒 Confirm Password</label>
+        <input type="password" id="confirmPassword" placeholder="Re-enter your password" autocomplete="new-password">
+        <div class="field-error">Passwords do not match.</div>
+      </div>
+
+      <button type="submit" class="btn btn-primary" id="submitBtn">Create Account</button>
+    </form>
+
+    <div class="auth-footer">
+      Already have an account? <a href="login.html">Sign in</a>
+    </div>
+  </div>
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>

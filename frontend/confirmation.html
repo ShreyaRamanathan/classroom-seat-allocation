@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Booking Confirmed · Classroom Seat Allocation System</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="page-center">
+  <div class="success-card">
+    <div class="success-icon">✓</div>
+    <h1>Successfully Booked Your Seat!</h1>
+    <p class="sub">Your classroom seat has been reserved.</p>
+
+    <div class="detail-list" id="detailList">
+      <div class="detail-row"><span class="d-label">Student Name</span><span class="d-value" id="dName">—</span></div>
+      <div class="detail-row"><span class="d-label">Student ID</span><span class="d-value" id="dId">—</span></div>
+      <div class="detail-row"><span class="d-label">Classroom</span><span class="d-value" id="dClassroom">—</span></div>
+      <div class="detail-row"><span class="d-label">Seat Number</span><span class="d-value" id="dSeat">—</span></div>
+      <div class="detail-row"><span class="d-label">Booking Status</span><span class="d-value"><span class="status-pill" id="dStatus">Confirmed</span></span></div>
+      <div class="detail-row"><span class="d-label">Booking Date</span><span class="d-value" id="dDate">—</span></div>
+    </div>
+
+    <div id="banner" class="banner"></div>
+
+    <div class="success-actions">
+      <button class="btn btn-secondary" onclick="viewBooking()">View Booking</button>
+      <a href="dashboard.html" class="btn btn-primary" style="text-decoration:none;">Back to Dashboard</a>
+      <button class="btn btn-outline" onclick="logout()">Logout</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/confirmation.js"></script>
+</body>
+</html>

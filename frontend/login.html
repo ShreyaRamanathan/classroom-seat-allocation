@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign In · Classroom Seat Allocation System</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="page-center">
+  <div class="auth-card">
+    <div class="brand">
+      <div class="brand-icon">🎓</div>
+      <h1>Classroom Seat Allocation</h1>
+      <p>Sign in to reserve your seat</p>
+    </div>
+
+    <div id="banner" class="banner"></div>
+
+    <form id="loginForm" novalidate>
+      <div class="field" id="field-name">
+        <label>👤 Student Name</label>
+        <input type="text" id="studentName" placeholder="e.g. Ananya Sharma" autocomplete="name">
+        <div class="field-error">Please enter your name.</div>
+      </div>
+
+      <div class="field" id="field-id">
+        <label>🆔 Student ID / Register Number</label>
+        <input type="text" id="studentId" placeholder="e.g. CS2024001" autocomplete="username">
+        <div class="field-error">Please enter your Student ID.</div>
+      </div>
+
+      <div class="field" id="field-password">
+        <label>🔒 Password</label>
+        <input type="password" id="password" placeholder="Enter your password" autocomplete="current-password">
+        <div class="field-error">Please enter your password.</div>
+      </div>
+
+      <button type="submit" class="btn btn-primary" id="submitBtn">Sign In</button>
+    </form>
+
+    <div class="auth-footer">
+      New here? <a href="register.html">Create an account</a>
+    </div>
+  </div>
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>
